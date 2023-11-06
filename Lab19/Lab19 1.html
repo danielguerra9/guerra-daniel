@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio19</title>
+    <link rel="stysheet" href="css/estilo.css"/>
+</head>
+<body>
+    <div id ="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
+        <div id ="drag_upload_file">
+            <p> Arrastre el archivo aqui</p>
+            <p>O</p>
+            <P> <input type="button" value="seleccione el archivo" onclick="file_explorer();"/></P>
+            <input type="file" id="selectfile"/>
+        </div>
+    </div>
+    <div class="imag-content"></div>
+   <script src="js/funciones_ajax.js"></script> 
+</body>
+</html>
