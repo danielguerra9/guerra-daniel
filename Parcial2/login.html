@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parcial #2</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form id="form">
+      <div class="card">
+        <div class="card-header">
+          <h1>Login</h1>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label>Usuario:</label>
+            <input type="text" placeholder="" id="name" required>
+          </div>
+          <div class="form-group">
+            <label>Contraseña:</label>
+            <input type="password" placeholder=""  id="password" required>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button type="submit" value="Ingresar"> Ingresar </button>
+        </div>
+        <p>No tienes cuenta?<a href="Registro.html">registro</a></p>
+      </div>
+   <div>
+    <a href="home.html"></a>
+   </div>
+    </form>
+    <script>
+      function hashCode(str) {
+        let hash = 0;
+        for (let i = 0, len = str.length; i < len; i++) {
+            let chr = str.charCodeAt(i);
+            hash = (hash << 5) - hash + chr;
+            hash |= 0; // Convert to 32bit integer
+        }
+        return hash;
+    }
+    </script>
+    <script src="session.js"></script>
+    <script src="login.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
